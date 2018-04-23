@@ -4,6 +4,7 @@ This is an open source bot.
 
 Refer to the Licence for more details.
 
+Firstly! go to https://nodejs.org/en/ and download node.js. Then follow what ive said below.
 After your bot files are in a folder edit the config with your text editor or IDE of choice to YOUR bot token.
 Then add the prefix as "?" or something easy to remember. Now you can edit the app.js too.
 (Note any damage done is not my fault. It's because you arent following what im saying!)
