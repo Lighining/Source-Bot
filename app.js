@@ -195,17 +195,18 @@ client.on("message", async message => {
     // So we get our messages, and delete them. Simple enough, right?
     const fetched = await message.channel.fetchMessages({count: deleteCount});
     message.channel.bulkDelete(fetched)
+    message.channel.send("Cleared :thumbsup:")
       .catch(error => message.reply(`Couldn't delete messages because of: ${error}`));
     }
 });
 
 
     client.on('guildMemberAdd', member => {
-      member.guild.channels.get('430512571162820629').send('**' + member.user.username + '**, has joined the L|MT Server');
+      member.guild.channels.get('Put Channel ID here').send('**' + member.user.username + '**, has joined the L|MT Server');
 });
 
     client.on('guildMemberRemove', member => {
-      member.guild.channels.get('430512571162820629').send('**' + member.user.username + '**, has left the L|MT Server');
+      member.guild.channels.get('put your channel ID here').send('**' + member.user.username + '**, has left the L|MT Server');
 });
 
 client.login(config.token);
